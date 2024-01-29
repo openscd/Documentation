@@ -77,7 +77,7 @@ body {
 }
 
 .landing .img {
-  background-image: url('./assets/img/landing.jpg');
+  background-image: url('assets/img/landing.jpg');
   background-size: cover;
   background-position: center;
   --parallax-speed: 0;
