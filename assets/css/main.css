@@ -99,13 +99,13 @@ body {
 }
 
 .landing .img.home {
-    background-image: url('/assets/images/landing.jpg');
+    background-image: url('{{ site.baseurl }}/assets/images/landing.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .landing .img.solar {
-    background-image: url('/assets/images/solar.jpg');
+    background-image: url('{{ site.baseurl }}/assets/images/solar.jpg');
     background-size: cover;
     background-position: center bottom;
 }
