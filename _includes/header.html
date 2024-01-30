@@ -1,0 +1,27 @@
+<header class="header {% if page.hide_landing %} header--sticky {% endif %}">
+    <img src="{{ 'assets/images/logo.png' | relative_url }}" class="logo" />
+    <nav class="nav">
+        <a class="nav__item" href="{{ '/' | relative_url }}">
+            Home
+        </a>
+        <a class="nav__item" href="{{ 'pages/guides' | relative_url }}">
+            Guides
+        </a>
+        <a class="nav__item" href="{{ 'pages/plugins' | relative_url }}">
+            Plugins
+        </a>
+    </nav>
+</header>
+
+{% unless page.hide_landing %}
+<section class="landing">
+    <div class="img {{ page.cover }}"></div>
+    <div class="gradient"></div>
+    <h1 class="brand">
+        {{ page.title }}
+    </h1>
+    <h4 class="subtitle">
+        {{ page.subtitle }}
+    </h4>
+</section>
+{% endunless %}

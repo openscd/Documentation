@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+    <section class="content">
+      <main class="main" aria-label="Content">
+
+        <div class="card">
+         <div class="card__header">
+           {{ page.name }}
+         </div>
+         <div class="card__content">
+           {{ content }}
+         </div>
+        </div>
+
+     </main>  
+    </section>
+
+    <script src="{{ "/assets/js/copy-code.js" | relative_url }}"></script>
+
+  </body>
+
+</html>
+
