@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    gap: 32px;
+}
+
+.container--row {
+    flex-direction: row;
+}
+
+.flex {
+    flex: 1;
+    display: block;
+}
