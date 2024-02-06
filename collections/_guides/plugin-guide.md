@@ -1,3 +1,9 @@
+---
+layout: guide
+title:  "How to write a plugin for OpenSCD"
+name:  "How to write a plugin for OpenSCD"
+summary:  "Brief tutorial explaining how to write a plugin for OpenSCD"
+---
 
 
 # How to write a plugin for OpenSCD
