@@ -20,18 +20,21 @@
   </style>
   <body>
     {% include header.html %}
-    <section class="content">
+    <section class="content content--sidebar">
       <main class="main" aria-label="Content">
         <div class="card">
+          {{ page.summary }}
+        </div>
+        <div class="card">
             <div class="card__content card__content--left markdown-body">
-                {{ page.content }}
+                {{ page.content | inject_anchors }}
             </div>
         </div>
       </main>  
       <aside>
         <div class="card">
             <div class="card__content">
-                {{ content | toc_only }}
+                {{ page.content | toc_only }}
             </div>
         </div>
       </aside>

@@ -5,27 +5,29 @@ subtitle: Guides
 cover: solar
 ---
 
-<section class="hero hero--landing">
-    <div class="row">
-        <div class="column column--1">
-            <h1 class="title">
-                Guides
-            </h1>
-        </div>
-    </div>
-</section>
 <main class="content">
     <div class="guides">
         {% for guide in site.guides %}
             <div class="guide">
-                <div class="card">
+                <a class="card card--selectable" href="{{ guide.url || relative_url }}">
                     <div class="card__header">
-                        <a href="{{ guide.url | relative_url }}">{{ guide.name }}</a>
+                        {{ guide.title }}
+                    </div>
+                    <div class="card__sub-header">
+                        <span>
+                            <i class="material-symbols-outlined">schedule</i>
+                            {{ guide.content | reading_time }}
+                        </span>
+                        <span>
+                            {% for i in (1..guide.difficulty) %}
+                                <i class="material-symbols-outlined">grade</i>
+                            {% endfor %}
+                        </span>
                     </div>
                     <div class="card__content">
                         {{ guide.summary }}
                     </div>
-                </div>
+                </a>
             </div>
         {% endfor %}
     </div>

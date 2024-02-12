@@ -3,6 +3,7 @@ layout: default
 title: Glossary
 subtitle: OpenSCD Glossary 
 cover: solar
+toc: true
 ---
 
 # OpenSCD Glossary

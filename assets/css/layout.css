@@ -11,3 +11,20 @@
     flex: 1;
     display: block;
 }
+
+.content {
+    margin: 32px 64px;
+}
+
+.content--sidebar {
+    display: flex;
+    gap: 32px;
+}
+
+.content aside {
+    width: 320px;
+}
+
+.main {
+    flex: 1;
+}
