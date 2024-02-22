@@ -7,3 +7,4 @@ gem 'kramdown'
 gem 'rouge'
 gem 'jekyll-toc'
 gem "webrick", "~> 1.8"
+gem 'jekyll-optional-front-matter'

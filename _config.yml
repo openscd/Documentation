@@ -37,6 +37,12 @@ defaults:
       path: "assets/images"
     values:
       image: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      cover: "home"
+
 
 # Sass settings
 sass:
@@ -62,3 +68,4 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-toc
+  - jekyll-optional-front-matter
