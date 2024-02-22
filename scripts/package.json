@@ -1,0 +1,20 @@
+{
+  "name": "@openscd/scripts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "download": "ts-node src/index.ts"
+  },
+  "author": "OpenSCD",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/atob": "^2.1.4",
+    "@types/node": "^20.11.20",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.2",
+    "atob": "^2.1.2"
+  }
+}
