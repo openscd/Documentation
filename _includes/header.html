@@ -1,0 +1,55 @@
+<header class="header {% if page.hide_landing %} header--sticky {% endif %}">
+    <img src="{{ 'assets/images/logo.png' | relative_url }}" class="logo" />
+    <h1 class="brand">
+        OpenSCD
+    </h1>
+    <span class="flex"></span>
+    <input type="checkbox" id="nav__toggle" class="nav__toggle" />
+    <label class="nav__toggle__target" for="nav__toggle">
+        <span class="material-symbols-outlined">menu</span>
+    </label>
+    <nav class="nav">
+        <a class="nav__item" href="{{ '/' | relative_url }}">
+            Home
+        </a>
+        <span class="nav__item" href="{{ 'pages/documentation' | relative_url }}">
+            Documentation
+            <ul>
+                <li>
+                    <a class="nav__item" href="{{ '/' | relative_url }}">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__item" href="{{ 'pages/plugins' | relative_url }}">
+                        Plugins
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__item">
+                        Sub Item 3
+                    </a>
+                </li>
+            </ul>
+        </span>
+        <a class="nav__item" href="{{ 'pages/guides' | relative_url }}">
+            Guides
+        </a>
+        <a class="nav__item" href="{{ 'pages/plugins' | relative_url }}">
+            Plugins
+        </a>
+    </nav>
+</header>
+
+{% unless page.hide_landing %}
+<section class="hero">
+    <div class="img {{ page.cover }}"></div>
+    <div class="gradient"></div>
+    <h1 class="title">
+        {{ page.title }}
+    </h1>
+    <h4 class="subtitle">
+        {{ page.subtitle }}
+    </h4>
+</section>
+{% endunless %}

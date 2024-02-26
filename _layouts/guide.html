@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+    <section class="content">
+      <main class="main" aria-label="Content">
+        <div class="card">
+            <div class="card__header">
+                {{ page.name }}
+            </div>
+            <div class="card__content card__content--left">
+                {{ page.content }}
+            </div>
+        </div>
+      </main>  
+      <aside>
+        <div class="card">
+            <div class="card__content">
+                {{ content | toc_only }}
+            </div>
+        </div>
+      </aside>
+    </section>
+
+  </body>
+
+</html>
